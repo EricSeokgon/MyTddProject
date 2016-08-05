@@ -13,10 +13,10 @@ public class Dollar {
     public int amount;
 
     public Dollar(int amount) {
-
+        this.amount = amount;
     }
 
     public void time(int muliplier) {
-        amount = 5 * 2;
+        amount *= muliplier;
     }
 }
