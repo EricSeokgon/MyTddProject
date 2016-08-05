@@ -22,7 +22,6 @@ public class MoneyTest extends TestCase {
     5. Money 반올림
     * */
 
-    @Test
     public void testMultiplication() {
         Dollar five = new Dollar(5);
         five.time(2);
