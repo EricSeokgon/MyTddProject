@@ -16,7 +16,7 @@ public class MoneyTest extends TestCase {
     // TODO: 2016-08-05
     /*
     1. $5+10CHF=$10 (환율 2:1)
-    2. $5*2=$10
+    2. $5*2=$10 --완료
     3. amount를 private으로 만들기
     4. Dollar 부작용(side effect?)
     5. Money 반올림
