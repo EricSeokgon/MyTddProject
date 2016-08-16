@@ -10,4 +10,13 @@ package com.hadeslee;
  * To change this template use File | Settings | File Templates.
  */
 public class Account {
+    private int balance;
+
+    public Account(int i) {
+        this.balance = i;
+    }
+
+    public int getBalance() {
+        return this.balance;
+    }
 }
