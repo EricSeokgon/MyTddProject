@@ -1,7 +1,6 @@
 package com.hadeslee;
 
 import junit.framework.TestCase;
-import org.junit.Test;
 
 /**
  * Project: MyTddProject
@@ -24,9 +23,23 @@ public class MoneyTest extends TestCase {
 
     public void testMultiplication() {
         Dollar five = new Dollar(5);
-        five.time(2);
+        five.times(2);
         assertEquals(10, five.amount);
+    }
+}
+
+class Dollar {
+    int amount = 10;
+
+    Dollar(int amount) {
+        this.amount = amount;
 
     }
 
+    void times(int muiltiplier) {
+        amount *= muiltiplier;
+    }
+
+
 }
+
