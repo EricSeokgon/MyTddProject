@@ -18,8 +18,16 @@ public class AccountTest {
     * 1.클래스 이름은 Account --완료
      * 2.기능은 세가지
      * -잔고 조회 --완료
-     * -입금
-     * -출금
+     * 10000원으로 계좌 생성
+     * 잔고 조회 결과 일치
+     * -입금 --완료
+     * 10000원으로 계좌 생성
+     * 1000원 입금
+     * 잔고 11000원 확인
+     * -출금 --완료
+     * 10000원으로 계좌 생성
+     * 1000원 출금
+     * 잔고 9000원 확인
      * 근액은 원 단위로(예: 천 원 = 1000)
     * */
     @Test
@@ -37,6 +45,20 @@ public class AccountTest {
 
         account = new Account(0);
         assertEquals(0, account.getBalance());
+    }
+
+    @Test
+    public void testDeposit() throws Exception {
+        Account account = new Account(10000);
+        account.deposit(1000);
+        assertEquals(11000, account.getBalance());
+    }
+
+    @Test
+    public void testWirhdraw() throws Exception {
+        Account account = new Account(10000);
+        account.withdraw(1000);
+        assertEquals(9000, account.getBalance());
 
     }
 
