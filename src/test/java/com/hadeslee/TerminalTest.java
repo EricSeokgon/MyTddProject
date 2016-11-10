@@ -10,10 +10,12 @@ import static org.junit.Assert.*;
 public class TerminalTest {
     private static Terminal term;
     //TODO
+
     /**
      * 1.터미널에 접속 - 성공
      * 2.터미널과 연결 해제한다-성공
-    * */
+     * 3.시스템에 로그온
+     */
     @BeforeClass
     public static void setUpBeforeClass() throws Exception {
         term = new Terminal();
@@ -27,12 +29,12 @@ public class TerminalTest {
 
     @Before
     public void setUp() throws Exception {
-
+        term.logon("guest", "geust");
     }
 
     @After
     public void tearDown() throws Exception {
-
+        term.logoff();
     }
 
     @Test

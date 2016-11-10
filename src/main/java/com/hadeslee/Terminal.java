@@ -16,9 +16,9 @@ public class Terminal {
         return;
     }
 
-    public String logon(String id, String pw) {
-
-        return id + ":" + pw;
+    public void logon(String id, String pw) {
+        System.out.println(id + ":" + pw);
+        return;
     }
 
     public void logoff() {
