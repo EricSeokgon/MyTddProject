@@ -22,6 +22,7 @@ public class Terminal {
     }
 
     public void logoff() {
+        System.out.println("<<logoff");
         return;
     }
 

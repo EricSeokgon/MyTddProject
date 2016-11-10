@@ -14,7 +14,8 @@ public class TerminalTest {
     /**
      * 1.터미널에 접속 - 성공
      * 2.터미널과 연결 해제한다-성공
-     * 3.시스템에 로그온
+     * 3.시스템에 로그온-성공
+     * 4.시스템으로부터 로그오프-성공
      */
     @BeforeClass
     public static void setUpBeforeClass() throws Exception {
