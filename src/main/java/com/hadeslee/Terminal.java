@@ -12,6 +12,7 @@ public class Terminal {
     }
 
     public void netDisconnect() {
+        System.out.println("Network is disconnected.");
         return;
     }
 
