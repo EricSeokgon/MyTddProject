@@ -5,6 +5,7 @@ package com.hadeslee;
  */
 public class Terminal {
     private static Terminal term;
+    private String ReturnMessage;
 
     public void netConnect() {
         System.out.println("Network is estabilished.");
@@ -17,7 +18,7 @@ public class Terminal {
     }
 
     public void logon(String id, String pw) {
-        System.out.println(id + ":" + pw);
+        System.out.println(">>logon " + id + ":" + pw);
         return;
     }
 
@@ -28,5 +29,14 @@ public class Terminal {
 
     public void isLogon() {
         return;
+    }
+
+    public void sendMessage(String msg) {
+       // System.out.println(msg);
+        this.ReturnMessage = msg;
+    }
+
+    public String getReturnMessage() {
+        return this.ReturnMessage;
     }
 }

@@ -16,6 +16,8 @@ public class TerminalTest {
      * 2.터미널과 연결 해제한다-성공
      * 3.시스템에 로그온-성공
      * 4.시스템으로부터 로그오프-성공
+     * 5.정상적으로 로그인됐는지 테스트
+     * 6.터미널 메시지 테스트
      */
     @BeforeClass
     public static void setUpBeforeClass() throws Exception {
@@ -39,12 +41,15 @@ public class TerminalTest {
     }
 
     @Test
-    public void netConnect() throws Exception {
-
+    public void testTerminalConnected() throws Exception {
+        System.out.println("== logon test");
     }
 
     @Test
-    public void netDisconnect() throws Exception {
+    public void testGetReturnMessage() throws Exception {
+        term.sendMessage("world!");
+        assertEquals("world!",term.getReturnMessage());
+        System.out.println("== message test");
 
     }
 
