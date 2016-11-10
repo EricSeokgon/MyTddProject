@@ -7,6 +7,7 @@ public class Terminal {
     private static Terminal term;
 
     public void netConnect() {
+        System.out.println("Network is estabilished.");
         return;
     }
 
