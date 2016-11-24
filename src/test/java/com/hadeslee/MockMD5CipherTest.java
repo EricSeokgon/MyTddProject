@@ -11,15 +11,16 @@ import static org.junit.Assert.assertThat;
 public class MockMD5CipherTest {
     @Test
     public void test패스워드저장() throws Exception {
-        UserRegister register =new UserRegister();
+        UserRegister register = new UserRegister();
         Cipher cipher = new MockMD5Cipher();
 
         String passowrd = "potato";
         String userId = "sweet88";
         register.savePassword(userId, cipher.encrypt(passowrd));
-        String decryptedPassword =  cipher.decrypt(register.)
+        String decryptedPassword = cipher.decrypt(register.getPassword(userId));
         assertThat(userId, is("sweet88"));
         assertThat(passowrd, is("potato"));
+        //assertThat(passowrd, is(decryptedPassword));
     }
 
 }

@@ -17,7 +17,7 @@ public class UserRegister {
         this.userId = userId;
     }
 
-    public String getPassword() {
+    public String getPassword(String userId) {
         return Password;
     }
 
@@ -26,5 +26,6 @@ public class UserRegister {
     }
 
     public void savePassword(String userId, String passowrd) {
+
     }
 }
