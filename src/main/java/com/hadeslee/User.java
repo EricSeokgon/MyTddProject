@@ -8,9 +8,11 @@ public class User {
     private String Password;
     private int TotalCouponCount;
     private int addCoupon;
+    private int lastOccupiedCoupon;
+    private int DiscountPercent;
 
 
-    public User(String sklee) {
+    public User(String id) {
     }
 
     public String getUserId() {
@@ -47,5 +49,19 @@ public class User {
 
     public void addCoupon(ICupon cupon) {
         TotalCouponCount = 1;
+    }
+
+    public ICupon getLastOccupiedCoupon() {
+        return null;
+    }
+
+    public int getDiscountPercent() {
+        System.out.println("DiscountPercent : " + DiscountPercent);
+        return DiscountPercent;
+    }
+
+    public void setDiscountPercent(int discountPercent) {
+        System.out.println("DiscountPercent : " + discountPercent);
+        DiscountPercent = discountPercent;
     }
 }
