@@ -7,6 +7,10 @@ public class User {
     private String userId;
     private String Password;
     private int TotalCouponCount;
+    private int addCoupon;
+
+    public User(String sklee) {
+    }
 
     public String getUserId() {
         return userId;
@@ -30,5 +34,13 @@ public class User {
 
     public void setTotalCouponCount(int totalCouponCount) {
         TotalCouponCount = totalCouponCount;
+    }
+
+    public int getAddCoupon() {
+        return addCoupon;
+    }
+
+    public void setAddCoupon(int addCoupon) {
+        this.addCoupon = addCoupon;
     }
 }
