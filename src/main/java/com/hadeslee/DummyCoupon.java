@@ -17,7 +17,7 @@ public class DummyCoupon implements ICupon {
 
     @Override
     public int getDiscountPercent() {
-        return 0;
+        return 1;
     }
 
     @Override

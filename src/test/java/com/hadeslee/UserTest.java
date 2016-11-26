@@ -17,7 +17,9 @@ public class UserTest {
 
         ICupon cupon = new DummyCoupon();
 
-        user.add
+        user.addCoupon(cupon);
+        assertThat("쿠폰 수령 후",user.getTotalCouponCount(), is(1));
+
     }
 
 }

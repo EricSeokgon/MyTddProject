@@ -9,6 +9,7 @@ public class User {
     private int TotalCouponCount;
     private int addCoupon;
 
+
     public User(String sklee) {
     }
 
@@ -42,5 +43,9 @@ public class User {
 
     public void setAddCoupon(int addCoupon) {
         this.addCoupon = addCoupon;
+    }
+
+    public void addCoupon(ICupon cupon) {
+        TotalCouponCount = 1;
     }
 }
