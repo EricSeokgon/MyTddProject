@@ -6,6 +6,7 @@ package com.hadeslee;
 public class User {
     private String userId;
     private String Password;
+    private int TotalCouponCount;
 
     public String getUserId() {
         return userId;
@@ -21,5 +22,13 @@ public class User {
 
     public void setPassword(String password) {
         Password = password;
+    }
+
+    public int getTotalCouponCount() {
+        return TotalCouponCount;
+    }
+
+    public void setTotalCouponCount(int totalCouponCount) {
+        TotalCouponCount = totalCouponCount;
     }
 }
