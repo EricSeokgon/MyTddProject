@@ -14,7 +14,10 @@ public class PriceCalculator {
         return item.getPrice();
     }
 
-    private double getDiscountRate(int percent) {
+    private double
+
+
+    getDiscountRate(int percent) {
         return (100 - percent) / 100d;
     }
 }
