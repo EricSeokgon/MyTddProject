@@ -15,8 +15,16 @@ public class MusicTest {
     public void testEquals_case1() {
         Music musicA = new Music("Better in time ", "Leona Lewis");
         Music musicB = musicA;
-        assertThat(musicB,equalTo(musicA));
+        assertThat(musicB, equalTo(musicA));
+    }
 
+    @Test
+    public void testEquals_case2() {
+        Music musicA = new Music("Better in time ", "Leona Lewis");
+        Music musicB = new Music("Better in time ", "Leona Lewis");
+        //assertThat(musicB,equalTo(musicA));
+        assertThat(musicB.getPerformerName(), equalTo(musicA.getPerformerName()));
+        assertThat(musicB.getSongName(), equalTo(musicA.getSongName()));
     }
 
 }

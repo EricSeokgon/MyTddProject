@@ -11,4 +11,20 @@ public class Music {
         this.songName = songName;
         this.performerName = performerName;
     }
+
+    public String getSongName() {
+        return songName;
+    }
+
+    public void setSongName(String songName) {
+        this.songName = songName;
+    }
+
+    public String getPerformerName() {
+        return performerName;
+    }
+
+    public void setPerformerName(String performerName) {
+        this.performerName = performerName;
+    }
 }
