@@ -3,7 +3,7 @@ package com.hadeslee;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 /**
  * Created by hadeslee on 2016-11-28.
@@ -17,6 +17,8 @@ public class BookTest {
         assertThat(abook.getName(),is(otherBook.getName()));
         assertThat(abook.getAuthor(), is(otherBook.getAuthor()));
         assertThat(abook.getPrice(), is(otherBook.getPrice()));
+
+
     }
 
 }
