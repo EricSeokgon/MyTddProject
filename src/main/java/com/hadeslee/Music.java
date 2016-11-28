@@ -27,4 +27,12 @@ public class Music {
     public void setPerformerName(String performerName) {
         this.performerName = performerName;
     }
+
+    @Override
+    public String toString() {
+        return "Music{" +
+                "songName='" + songName + '\'' +
+                ", performerName='" + performerName + '\'' +
+                '}';
+    }
 }

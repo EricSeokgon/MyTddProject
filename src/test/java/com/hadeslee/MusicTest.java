@@ -25,6 +25,7 @@ public class MusicTest {
         //assertThat(musicB,equalTo(musicA));
         assertThat(musicB.getPerformerName(), equalTo(musicA.getPerformerName()));
         assertThat(musicB.getSongName(), equalTo(musicA.getSongName()));
+        assertThat(musicB.toString(),equalTo(musicA.toString()));
     }
 
 }
