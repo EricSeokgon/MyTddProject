@@ -43,6 +43,8 @@ public class TestListEqual {
         listB.add(new Employee("김수현"));
         listB.add(new Employee("수지"));
 
-        assertEquals("리스트 비교", listA, listB);
+        //assertEquals("리스트 비교", listA, listB);
+        assertEquals("리스트 비교", listA.toString(), listB.toString());
+
     }
 }
